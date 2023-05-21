@@ -41,6 +41,7 @@ const updateClienteByID = async (req = request, res = response) => {
     try {
         const { id } = req.params
         const data = req.body
+        data.fechaActualizacion = new Date()
         const cliente = await Cliente.findByIdAndUpdate(id, data, { new: true })
         return res.status(201).json(cliente)
       } catch (e) {

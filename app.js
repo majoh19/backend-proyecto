@@ -18,7 +18,4 @@ app.use('/api/universidades', universidad)
 const etapa = require('./routes/etapa')
 app.use('/api/etapas', etapa)
 
-const proyecto = require('./routes/proyecto')
-app.use('/api/proyectos', proyecto)
-
 module.exports = app

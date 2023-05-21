@@ -16,7 +16,6 @@ The app is designed to manage projects. It allows to create and list various typ
 * Cliente
 * Universidad
 * Etapa
-* Proyecto
 
 ***
 
