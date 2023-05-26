@@ -35,10 +35,10 @@ const getTipoProyecto = async (req = request, res = response) => {
 //editar
 const updateTipoProyectoByID = async (req = request, res = response) => {
     try {
-        const { id } = req.params
+        const id = req.params.id
         const data = req.body
         data.fechaActualizacion = new Date()
-        const tipoProyecto = await TipoProyecto.findByIdAndUpdate(ObjectId(id), data, { new: true })
+        const tipoProyecto = await TipoProyecto.findByIdAndUpdate(id, data, { new: true})
         return res.status(201).json(tipoProyecto)
     } catch (e) {
         console.log(e)
