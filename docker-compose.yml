@@ -5,7 +5,7 @@ version: "3.9"
 services:
   proyectos-backend:
     container_name: proyectos-backend
-    image: proyectos-backend:v1
+    image: proyectos-backend:v2
     build:
       context: .
     ports:
